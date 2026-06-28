@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato | Portfólio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="nav-logo"><span>Nicole</span>Cabral</div>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="sobre.html">Sobre mim</a></li>
+        <li><a href="formacao.html">Formação</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+
+      <button id="btn-tema">Claro</button>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="secao-titulo">Entre em <span>Contato</span></h1>
+    <div class="secao-linha"></div>
+
+    <div class="contato-wrapper">
+
+      <!-- Coluna esquerda: informações de contato -->
+      <section class="contato-info">
+        <h2>Vamos conversar!</h2>
+        <p>Fique à vontade para entrar em contato. Responderei o mais breve possível.</p>
+
+        <div class="contato-item">
+          <span class="icone">📧</span>
+          <span>devnicolecabral@gmail.com</span>
+        </div>
+        <div class="contato-item">
+          <span class="icone">📍</span>
+          <span>Vitória da Conquista-BA</span>
+        </div>
+        <div class="contato-item">
+          <span class="icone">💼</span>
+          <a href="https://linkedin.com/in/devnicolecabral" target="_blank">LinkedIn</a>
+        </div>
+        <div class="contato-item">
+          <span class="icone">🐙</span>
+          <a href="https://github.com/devnicolecabral" target="_blank">GitHub</a>
+        </div>
+      </section>
+
+      <!-- Coluna direita: form de contato -->
+      <section>
+        <form id="form-contato" novalidate>
+
+          <!-- Campo Nome -->
+          <div class="form-grupo">
+            <label for="nome">Nome</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Seu nome completo"
+              autocomplete="name"
+            />
+            <span class="erro-msg">Por favor, informe seu nome (mínimo 2 caracteres).</span>
+          </div>
+
+          <!-- Campo E-mail -->
+          <div class="form-grupo">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="seuemail@exemplo.com"
+              autocomplete="email"
+            />
+            <span class="erro-msg">Por favor, informe um e-mail válido.</span>
+          </div>
+
+          <!-- Campo Mensagem -->
+          <div class="form-grupo">
+            <label for="mensagem">Mensagem</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              placeholder="Escreva sua mensagem aqui..."
+            ></textarea>
+            <span class="erro-msg">A mensagem deve ter pelo menos 10 caracteres.</span>
+          </div>
+
+          <!-- Botão de envio -->
+          <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+
+        </form>
+      </section>
+    </div>
+  </main>
+  <div class="modal-overlay" id="modal-sucesso" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <h3>Mensagem enviada com sucesso! </h3>
+      <p>Obrigada pelo contato. Retornarei em breve.</p>
+      <button id="btn-fechar-modal">OK</button>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 Nicole Cabral. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
