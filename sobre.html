@@ -1,11 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mim | Portfólio </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre mim | Portfólio</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    
+
+  <header>
+    <nav>
+      <!-- Logo e nome -->
+      <div class="nav-logo"><span>Nicole</span>Cabral</div>
+
+      <!-- Botão menu hambúrguer -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Links de navegação -->
+      <ul class="nav-links">
+        <li><a href="sobre.html">Sobre mim</a></li>
+        <li><a href="formacao.html">Formação</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+
+      <!-- Botão alternar tema claro/escuro -->
+      <button id="btn-tema">Claro</button>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="secao-titulo">Sobre <span>mim</span></h1>
+    <div class="secao-linha"></div>
+
+    <!-- Bloco hero: foto + apresentação -->
+    <section class="hero">
+      <img
+        src="naoesquecerdepegarfotopracolocaraquidepois"
+        alt="Foto de Nicole Cabral"
+        class="hero-foto"
+        onerror="this.style.display='none'"
+      />
+
+      <div class="hero-texto">
+        <h1>Olá, sou <span>Nicole Cabral</span></h1>
+        <p class="subtitulo">Analista de projetos em cibersegurança e estudante de engenharia de software · Vitória da Conquista-BA </p>
+        <p>
+            Atualmente atuo como Analista de Projetos Jr. na área de Cibersegurança, onde desenvolvo experiência em gestão de projetos, organização de processos e colaboração entre equipes de tecnologia. Sou formada em Análise e Desenvolvimento de Sistemas, graduanda em Engenharia de Software e pós-graduanda em MBA em AI for Business. Além disso, estou aprofundando meus conhecimentos em desenvolvimento full-stack e em engenharia de software, arquitetura de sistemas, inteligência artificial e ciência de dados. Meu objetivo é construir soluções robustas, escaláveis e que gerem impacto por meio da tecnologia.
+        </p>
+      </div>
+    </section>
+
+    <!-- Cards de infos pessoais -->
+    <section class="info-cards">
+      <div class="card">
+        <h3>Idade</h3>
+        <p>24 anos</p>
+      </div>
+      <div class="card">
+        <h3>Localização</h3>
+        <p>Vitória da Conquista-BA</p>
+      </div>
+      <div class="card">
+        <h3>Disponibilidade</h3>
+        <p>Não estou aberta à propostas no momento atual.</p>
+      </div>
+      <div class="card">
+        <h3>E-mail</h3>
+        <p>devnicolecabral@gmail.com</p>
+      </div>
+    </section>
+
+    <!-- Hobbies e interesses -->
+    <section class="hobbies">
+      <h2>Interesses &amp; Hobbies</h2>
+      <div class="tags">
+        <span class="tag">Videogames</span>
+        <span class="tag">Quadrinhos</span>
+        <span class="tag">Livros</span>
+        <span class="tag">Esportes</span>
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+    <p>&copy; 2025 Nicole Cabral. Todos os direitos reservados.</p>
+  </footer>
+
+
+  <script src="js/script.js"></script>
 </body>
 </html>
